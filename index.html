@@ -1,23 +1,4 @@
-🔥 Let's upgrade Beast Notes into something clean, smooth, and powerful!
 
-
----
-
-✅ What You'll Get:
-
-Responsive layout (fits phone or desktop)
-
-Dark/Light mode toggle
-
-Save, display, and delete notes
-
-Notes stored locally (no server needed)
-
-Logo and header for your brand look
-
-
-
----
 
 📄 index.html (Full App Code)
 
@@ -169,76 +150,6 @@ Logo and header for your brand look
 
     // Load saved notes
     displayNotes();
-  </script>
-</body>
-</html>
-
-
----
-
-✅ What to Do Next:
-
-1. Copy this into your index.html in your GitHub repo
-
-
-2. Commit the change
-
-
-3. Go to your GitHub Pages live link
-
-
-4. Test it on your phone — type → save → see notes appear → switch theme → delete notes
-
-
-
-
----
-
-If you'd like:
-
-✅ A logo added
-
-📱 Turned into a full Android app (no stress, no Python needed)
-
-🔄 Notes backup or export
-
-
-Say the word and I’ll handle it step-by-step.
-
-Let’s make Beast Notes a beast, Oupa. 💪
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Beast Notes</title>
-  <link rel="manifest" href="manifest.json">
-  <link rel="icon" href="icon.png">
-  <style>
-    body { font-family: sans-serif; margin: 1rem; background: #111; color: #fff; }
-    textarea { width: 100%; height: 200px; background: #222; color: #fff; padding: 1rem; border: none; border-radius: 8px; }
-    button { margin-top: 1rem; padding: 10px; border: none; background: #00ffcc; color: #000; font-weight: bold; border-radius: 8px; }
-  </style>
-</head>
-<body>
-  <h1>Beast Notes</h1>
-  <textarea id="note" placeholder="Type your thoughts..."></textarea>
-  <button onclick="saveNote()">Save</button>
-
-  <script>
-    function saveNote() {
-      const note = document.getElementById("note").value;
-      localStorage.setItem("note", note);
-      alert("Note saved!");
-    }
-
-    window.onload = function () {
-      const savedNote = localStorage.getItem("note");
-      if (savedNote) {
-        document.getElementById("note").value = savedNote;
-      }
-    };
   </script>
 </body>
 </html>
